@@ -8,7 +8,7 @@
 
 //  console.log("" + 1 + 0) //10 դարձրել է string և կոնկատենացիա է կատարել
 // console.log(true + false)  // 1 => քանի որ  true = 1 իսկ false=0 արդյունքում կստանանք true այսինքն 1 
-// console.log("2" * "3") // 6, քանի որ 2-ի type նույն է և կատարել է բազմապատկում
+// console.log("2" * "3") // 6, քանի որ 2-    ի type նույն է և կատարել է բազմապատկում
 // console.log("$" + 4 + 5)// "$45", քանի որ  առաջինի  type-ը string  է բոլորինը դարձրել է string և կատարել է կոնկատենացիա
 // console.log("4px" - 2) //NaN, քանի որ տեքստից  հանել են  թիվ NaN է
 // console.log(null + 1)//1,  null-ը դատարկ բազմություն կնշանակե + 1 կվերադարձն է նորից 1
@@ -164,25 +164,25 @@ function name(param){
  
  //2=>
  
- var number=Number(prompt("Write a random number"))
- var count=0
+//  var number=Number(prompt("Write a random number"))
+//  var count=0
  
- if (number===1) {
-   console.log("1 is not a prime number")
- } else if(number>1){
-   for(var i=2; i<number; i++ ){
-     if(number%i===0){
-     count=1
+//  if (number===1) {
+//    console.log("1 is not a prime number")
+//  } else if(number>1){
+//    for(var i=2; i<number; i++ ){
+//      if(number%i===0){
+//      count=1
      
-   }
- }
-   if(count==0){
-     console.log('is a prime number')
-   }else{
-     console.log('is not a prime number')
-   }
+//    }
+//  }
+//    if(count==0){
+//      console.log('is a prime number')
+//    }else{
+//      console.log('is not a prime number')
+//    }
  
- }
+//  }
  
  
  //3=>
@@ -210,36 +210,36 @@ function name(param){
  
  
  //4=>
-  const person={
-    name:prompt('your name'),
-    surname:prompt('your surname'),
-    age:+prompt('your age'),
-    gender:prompt('your gender-> female or male'),
-    myfunc:function(){
-      if(this.gender==='female'){
-        if(  this.age>=63){
-          console.log('She is grandmother')
-        }else if(this.age >17 && this.age<63){
-          console.log('She is a worker')
-        }else if(this.age>0 && this.age<17){
-           console.log('She is a little girl')
-        }
-        }
-     else if(this.gender==='male'){
-         if( this.age>65){
-          console.log('He is a grandfather')
-        }else if(this.age >17 && this.age<65){
-          console.log('She is a worker')
-        }else if(this.age>0 && this.age<17){
-           console.log('She is a little boy')
-        }
-     }
-      else{
-        console.log('Wrong import')
-      }
-    }
-  }
-  person.myfunc()
+  // const person={
+  //   name:prompt('your name'),
+  //   surname:prompt('your surname'),
+  //   age:+prompt('your age'),
+  //   gender:prompt('your gender-> female or male'),
+  //   myfunc:function(){
+  //     if(this.gender==='female'){
+  //       if(  this.age>=63){
+  //         console.log('She is grandmother')
+  //       }else if(this.age >17 && this.age<63){
+  //         console.log('She is a worker')
+  //       }else if(this.age>0 && this.age<17){
+  //          console.log('She is a little girl')
+  //       }
+  //       }
+  //    else if(this.gender==='male'){
+  //        if( this.age>65){
+  //         console.log('He is a grandfather')
+  //       }else if(this.age >17 && this.age<65){
+  //         console.log('She is a worker')
+  //       }else if(this.age>0 && this.age<17){
+  //          console.log('She is a little boy')
+  //       }
+  //    }
+  //     else{
+  //       console.log('Wrong import')
+  //     }
+  //   }
+  // }
+  // person.myfunc()
 
 
 
@@ -277,3 +277,14 @@ foo();
  
 //  person.lastnameChange='',
 //console.log(person.lastnameChange)
+
+
+// let arr = ["Yerevan", "Gyumri", "Artashat"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log( arr[i] );
+// }
+
+let arr = ["a", "s", "d", "f"];
+
+console.log( arr.slice(1, 3) )
