@@ -4,7 +4,7 @@
     "Pete": 300,
     "Mary": 250
   };
-  
+
   function sumSalaries(salaries) {
     let count=0
 
@@ -16,3 +16,15 @@
  
   
   console.log( sumSalaries(salaries) )
+
+
+  let user = {
+    name: 'John',
+    surname:'Math',
+    age: 30
+  };
+  
+  function count(obj) {
+     return Object.keys(obj).length 
+  }
+  console.log( count(user) )
