@@ -18,5 +18,5 @@ function fib(n){
         
       }
 }
-console.log(fib(3)); // 2
-console.log(fib(7)); // 1
+console.log(fib(3)); 
+console.log(fib(7));
