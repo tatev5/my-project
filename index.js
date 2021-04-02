@@ -15,12 +15,13 @@ let arr=[5,10,15,20,25,30,35,40,6,12,18,24,31,37,3,11,19,27,34,2,13,22,32,1,14,2
 //     console.log(members)
 //   }
 // })
+
 arr.sort(function(a, b) { return a - b; });
 
 console.log(arr)
 
 
-////
+
 function foo(obj) {
     with (obj) {
     a = 2;
