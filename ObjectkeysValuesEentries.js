@@ -1,4 +1,3 @@
-
 //  let salaries = {
 //     "John": 100,
 //     "Pete": 300,
@@ -35,13 +34,13 @@ function foo(obj) {
  }
 }
 var o1 = {
- a: 3
+  a: 3
 };
 var o2 = {
- b: 3
+  b: 3
 };
 foo( o1 );
-console.log( o1.a ); // 2
+ console.log( o1.a ); // 2
 foo( o2 );
-console.log( o2.a ); // undefined
-console.log( a ); // 2—Oops, leaked global!
+ console.log( o2.a ); // undefined
+ console.log( a ); // 2—Oops, leaked global!
