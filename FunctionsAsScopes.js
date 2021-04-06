@@ -13,4 +13,11 @@ var x = 2;
  console.log( x ); 
  console.log( global.x ); 
 })( window );
-console.log( x ); 
+console.log( x );
+
+let ar = [3, 5, 1];
+let arr2 = [8, 9, 15];
+
+let merged = [0, ...ar, 2, ...arr2];
+
+console.log(merged);
