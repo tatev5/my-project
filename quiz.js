@@ -1,4 +1,4 @@
-const get = function (obj, path, def) {
+const take = function (obj, path, def) {
 	let current = obj;
 	for (let i = 0; i < path.length; i++) {
 		if (!current[path[i]]){
@@ -19,7 +19,7 @@ const obj = {
 	]
 };
 
-let getPath = get(obj, ['a', '0', 'b', 'c']);
+let getPath = take(obj, ['a', '0', 'b', 'c']);
 
 
 console.log(getPath);
