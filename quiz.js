@@ -38,4 +38,4 @@ function centuryFromYear(year) {
 }
 
 
-console.log(centuryFromYear(1999))
+console.log(centuryFromYear(2000))
