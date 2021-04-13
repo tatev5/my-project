@@ -39,3 +39,4 @@ function centuryFromYear(year) {
 
 
 console.log(centuryFromYear(2000))
+
