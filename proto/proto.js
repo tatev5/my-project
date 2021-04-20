@@ -38,4 +38,4 @@
 
   console.log(pockets.pen)
   console.log(bed.glasses)
-  console.log(pockets.glas);
+  console.log(pockets.glasses);
