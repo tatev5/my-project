@@ -1,16 +1,41 @@
-let animal = {
-    jumps: null
+// let animal = {
+//     jumps: null
+//   };
+//   let rabbit = {
+//     __proto__: animal,
+//     jumps: true
+//   };
+  
+//   console.log( rabbit.jumps ); //true
+  
+//   delete rabbit.jumps;
+//   console.log( rabbit.jumps );//null
+  
+//   delete animal.jumps;
+  
+//   console.log( rabbit.jumps );
+
+//2
+  let head = {
+    glasses: 1
   };
-  let rabbit = {
-    __proto__: animal,
-    jumps: true
+  
+  let table = {
+    pen: 3,
+    __proto__:head
   };
   
-  console.log( rabbit.jumps ); //true
+  let bed = {
+    sheet: 1,
+    pillow: 2,
+    __proto__:table
+  };
   
-  delete rabbit.jumps;
-  console.log( rabbit.jumps );//null
-  
-  delete animal.jumps;
-  
-  console.log( rabbit.jumps );
+  let pockets = {
+    money: 2000,
+    __proto__:bed
+  };
+
+  console.log(pockets.pen)
+  console.log(bed.glasses)
+  console.log(pockets.glas);
