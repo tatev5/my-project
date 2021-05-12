@@ -1,11 +1,12 @@
 // function getEven(array) {
 //     if (!Array.isArray(array)) {
-//         return 'parametr is not array';
+//         throw new Error('Parametr is not array')
+
 //     }
 //     for (let i in array) {
 //         if (typeof array[i] !== 'number' || Number.isNaN(array[i])) {
-//             return JSON.stringify(array[i]) + ' is not number';
 
+//             throw new Error(JSON.stringify(array[i]) + ' is not number')
 
 //         }
 
@@ -13,11 +14,14 @@
 //     let arr = array.filter(num => num % 2 === 0)
 //     return arr;
 
-// 1
+
 // }
 
-// console.log(getEven([2, 3, 4, 6, 7, 9, NaN, 10]));
+//console.log(getEven([2, 3, 4, 6,'s', 7, 9, 10]));
+// console.log(getEven([2, 3, 4, 6, 7, 9, 10]));
+// console.log(getEven('atri'));
 
+// console.log(getEven('str'));
 //    const newarr=[];
 // for(var i in array){
 //     if(array[i]%2===0){
@@ -37,31 +41,40 @@
 //     }
 // }
 
-// function num(a1, n,d) {
-//   if ( n== 1) {
-//     return 1;
-//   } else {
-//   return 
-//   }
-// }
+let getEven;
+try {
 
-// console.log( progresia(2, 3) )
+    getEven = (array) => {
+        if (!Array.isArray(array)) {
+            throw new Error('Parametr is not array')
 
+        }
+        for (let i in array) {
+            if (typeof array[i] !== 'number' || Number.isNaN(array[i])) {
 
+                throw new Error(JSON.stringify(array[i]) + ' is not number')
 
+            }
 
-function sum(x) {
-    let sum = 0
-    for (let i = 1; i <= x; i++) {
-        sum += i
+        }
+        let arr = array.filter(num => num % 2 === 0)
+        return arr;
+
 
     }
-    return sum;
+    
+    console.log(getEven([2, 3, 4, 6, 7, 9, 10]));
+    console.log(getEven([2, 3, 4, 6, 's', 7, 9, 10]));
+    console.log(getEven('atri'));
+
+} catch (err) {
+    console.log(err)
+}finally{
+    console.log('finally))')
 }
 
-console.log(sum(10));
-function foo (object1,string1){
-    return object1[string1[0]][string1[2]][string1[4]];
-     
-}
-console.log( foo ({a: {b:{d:'5555'}}},  'a.b.d'));
+console.log(getEven([2, 3, 4, 6, 7, 9, 10]));
+console.log(getEven([2, 3, 4, 6, 's', 7, 9, 10]))
+
+
+
