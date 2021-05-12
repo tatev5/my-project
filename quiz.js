@@ -85,3 +85,19 @@ function adjacentElementsProduct(inputArray) {
   rabbit.hide();
   rabbit.run(2)
   rabbit.stop(2)
+
+
+
+  try{
+
+	function inBetween(a,b) {
+		return function (x) {
+			return x>=a && x<=b
+		}
+		
+	}
+	let array= [1, 2, 3, 4, 5, 6, 7,8,9,10];
+  console.log( array.filter(inBetween(1, 7)) )
+  }catch(err){
+	console.log(err);
+  }
