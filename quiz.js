@@ -96,8 +96,24 @@ function adjacentElementsProduct(inputArray) {
 		}
 		
 	}
-	let array= [1, 2, 3, 4, 5, 6, 7,8,9,10];
+	let array= [0,1, 2, 3, 4, 5, 6, 7,8,9,10];
   console.log( array.filter(inBetween(1, 7)) )
   }catch(err){
 	console.log(err);
   }
+
+
+  class FormatError extends SyntaxError {
+	constructor(message) {
+	  super(message);
+	  this.name = "FormatError";
+	}
+  }
+  
+  let err = new FormatError("ошибка форматирования");
+  
+  console.log( err.message ); 
+  console.log( err.name ); 
+  console.log( err.stack );  
+  
+  console.log( err instanceof SyntaxError ); 
