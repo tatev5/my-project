@@ -33,3 +33,7 @@ function adjacentElementsProduct(inputArray) {
    };
    adjacentElementsProduct([3, 6, -2, -5, 7, 3])
  
+//5
+function shapeArea(n) {
+    return n*n + (n-1)*(n-1);
+}
