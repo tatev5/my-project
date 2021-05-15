@@ -8,3 +8,10 @@ function add(param1, param2) {
 var sum=add(1,2)
 console.log(sum)
 
+//2
+function centuryFromYear(year) {
+    return Math.floor(year/100) + ((year%100) ? 1 : 0)
+}
+
+
+console.log(centuryFromYear(2000))
